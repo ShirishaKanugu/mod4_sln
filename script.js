@@ -40,7 +40,7 @@ WARNING!!! WARNING!!!
 // Loop over the names array and say either 'Hello' or "Good Bye"
 // using either the helloSpeaker's or byeSpeaker's 'speak' method.
 // See Lecture 50, part 1
-for (var name in names) {
+for (var name=0; name < names.length; name++) {
 
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
@@ -56,10 +56,10 @@ for (var name in names) {
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
-  if (name.charAt(0).toLowerCase === 'j') {
-     byeSpeaker.speak(name);
+  if (names[name].charAt(0).toLowerCase === 'j') {
+     byeSpeaker.speak(names[name]);
   } else {
-    helloSpeaker.speak(name);
+    helloSpeaker.speak(name[name]);
   }
 }
 
