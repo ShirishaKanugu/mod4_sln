@@ -59,7 +59,7 @@ for (var name=0; name < names.length; name++) {
   if (names[name].charAt(0).toLowerCase() === 'j') {
      byeSpeaker.speak(names[name]);
   } else {
-    helloSpeaker.speak(name[name]);
+    helloSpeaker.speak(names[name]);
   }
 }
 
