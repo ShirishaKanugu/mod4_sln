@@ -56,7 +56,7 @@ for (var name=0; name < names.length; name++) {
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
-  if (names[name].charAt(0).toLowerCase === 'j') {
+  if (names[name].charAt(0).toLowerCase() === 'j') {
      byeSpeaker.speak(names[name]);
   } else {
     helloSpeaker.speak(name[name]);
